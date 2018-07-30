@@ -1,0 +1,13 @@
+
+
+新调用函数
+Cm3508_ang_ctr(&Cm3508_ang_pid[4], &Cm3508_spd_pid[4], &moto_chassis[4], angle_set);
+Cm3508_ang_ctr(&Cm3508_ang_pid[5], &Cm3508_spd_pid[5], &moto_chassis[5], angle_set);
+Set_6623_current(&hcan1, 0, 0, Cm3508_spd_pid[5].pos_out, Cm3508_spd_pid[4].pos_out);//2丝杠3508
+		（覆盖了拨弹的ID）
+	
+双丝杠3508的pid参数（速度无滤波）已写入
+稳定、相对误差小
+
+																2018.5.13
+																	蒙
